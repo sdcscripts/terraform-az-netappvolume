@@ -1,0 +1,26 @@
+// the name and location of the first resource group is used for the secondary resource groups and all other resources
+computerg         = "netappcompute"
+computerglocation = "uksouth"
+
+networkrg         = "netappnetwork"
+networkrglocation = "uksouth"
+
+storagerg         = "netappstorage"
+storagerglocation = "uksouth"
+
+// a vm is created which is used to access the sql database via private link, you can specify the variable values here
+vm_hostname          = "linuxvm"
+vm_size              = "Standard_DS2_V2"
+vm_admin_user        = "vmadmin"
+vm_admin_pwd         = "" // should be adequately complex
+
+// networking related variable entries. net_sub entries are for vm and netapp subnet.
+vnet_name    = "netappvnet"
+net_sub_cidr = ["172.16.1.0/24"]
+net_sub_name = ["computesubnet"]
+
+// netapp related variable entries. 
+netappmountname         = "mynetappvol"
+netappservicelevel      = "Standard"
+netappvolumequota_in_gb = "100"
+netapppoolsize_in_tb    = "4"
