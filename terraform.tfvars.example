@@ -12,7 +12,7 @@ storagerglocation = "uksouth"
 vm_hostname          = "linuxvm"
 vm_size              = "Standard_DS2_V2"
 vm_admin_user        = "vmadmin"
-vm_admin_pwd         = "" // should be adequately complex
+// vm_admin_pwd         = "" // should be adequately complex - uncomment and enter password here for auto reading at runtime
 
 // networking related variable entries. net_sub entries are for vm and netapp subnet.
 vnet_name    = "netappvnet"
