@@ -1,6 +1,6 @@
 // the name and location of the first resource group is used for the secondary resource groups and all other resources
 computerg         = "netappcompute"
-computerglocation = "uksouth"
+computerglocation = "eastus"
 
 networkrg         = "netappnetwork"
 networkrglocation = "uksouth"
