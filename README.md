@@ -20,7 +20,7 @@ The key points and features are:
 
 - **Easy Run**: There is a `terraform.tfvars.example` file which you should rename to `terraform.tfvars` and you will then need to set the password for the vmadmin account. All other variable entries can be used or you can optionally set them to new values if you wish. Afterwards, simply run Terraform init, Terraform apply and it will deploy all resources into East US.  
 
-- **Network Security Group Rules**: This deployment will automatically attach an NSG rule to the VM that is created which means port 22 (SSH) will be open publically. Be aware of this, you may wish to disallow this and set up alternative methods to remote to the VM such as Azure Bastion, VPN or Expressroute. 
+- **Network Security Group Rules**: This deployment will automatically attach an NSG rule to the VM that is created which means port 22 (SSH) will be open publicly. Be aware of this, you may wish to disallow this and set up alternative methods to remote to the VM such as Azure Bastion, VPN or Expressroute.
 
 - **Mounting NFS volume**: Once terraform apply has finished you will be able to log in , download the NFS tools and mount the NFS volume. See the Mount Instructions from the Netapp resource in the portal for more information. (https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines)
 
